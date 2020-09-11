@@ -1,3 +1,3 @@
 def reverse_each_word(text)
-  text.reverse
+  text.gsub(/\w+/) { |match| match.reverse }
 end
